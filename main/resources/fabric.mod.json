@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "chudcraftintro",
+	"version": "${version}",
+	"name": "ChudcraftIntro",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chudcraftintro/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cool.intro.ChudcraftIntro"
+		],
+		"client": [
+			"cool.intro.ChudcraftIntroClient"
+		]
+	},
+	"mixins": [
+		"chudcraftintro.mixins.json",
+		{
+			"config": "chudcraftintro.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.4",
+		"minecraft": ">=1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
