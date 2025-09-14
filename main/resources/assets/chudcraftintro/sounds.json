@@ -1,0 +1,10 @@
+{
+  "intro_music": {
+    "sounds": [
+      {
+        "name": "chudcraftintro:intro_music",
+        "stream": true
+      }
+    ]
+  }
+}
